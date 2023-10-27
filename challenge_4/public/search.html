@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/library/boxicons-2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Car Rent</title>
+</head>
+<section id="hero" class="">
+    <div class="container">
+        <nav class="navbar d-flex justify-content-between">
+            <div class="logo bg-primary"></div>
+            <ul class="navbar__menu">
+                <a href="">
+                    <li>Our Services</li>
+                </a>
+                <a href="">
+                    <li>Why Us</li>
+                </a>
+                <a href="">
+                    <li>Testimonial</li>
+                </a>
+                <a href="">
+                    <li>FAQ</li>
+                </a>
+                <a class="btn-register" href="">Register</a>
+            </ul>
+        </nav>
+        <div class="hero__container">
+            <div class="hero__title">
+                <h1>Sewa & Rental Mobil Terbaik di kawasan Sumedang</h1>
+                <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau.
+                    Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+            </div>
+            <div class="hero__banner">
+                <img src="https://ik.imagekit.io/1ishtw6qg/img_car.png?updatedAt=1698073572417" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<div class="filter__wrapper container">
+    <div class="filter__container">
+        <form id="carFilterForm" action="/result" type="get" class="grid__filter">
+            <div class="box__filter">
+                <label for="driverType">Tipe Driver</label>
+                <select name="type" type="text" placeholder="" class="form-control your-css-class" id="driverType">
+                    <option value="">Pilih tipe driver</option>
+                    <option value="with-driver">Dengan Sopir</option>
+                    <option value="without-driver">Tanpa Sopir (Lepas Kunci)</option>
+                </select>
+            </div>
+            <div class="box__filter">
+                <label for="rentDate">Tanggal</label>
+                <input type="date" name="tanggal" placeholder="" class="form-control your-css-class" id="rentDate">
+            </div>
+            <div class="box__filter">
+                <label for="pickupTime">Waktu Jemput/Ambil</label>
+                <select name="waktu_jemput" type="text" placeholder="" class="form-control your-css-class" id="pickupTime">
+                    <option value="">Pilih waktu jemput</option>
+                    <option value="08">08.00</option>
+                    <option value="09">09.00</option>
+                    <option value="10">10.00</option>
+                    <option value="11">11.00</option>
+                    <option value="12">12.00</option>
+                </select>
+            </div>
+            <div class="box__filter">
+                <label for="passengerCount">Jumlah Penumpang (optional)</label>
+                <input name="jumlah_penumpang" type="text" placeholder="" class="form-control your-css-class" id="passengerCount">
+            </div>
+            <div class="d-flex h-100 align-items-end">
+                <button type="submit" class="btn__filter form-control your-css-class" id="filterButton">
+                    Cari Mobil
+                </button>
+            </div>
+        </form>
+
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row footer__wrapper">
+            <div class="footer__contact col-lg-3 d-flex flex-column">
+                <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+                <p>binarcarrental@gmail.com</p>
+                <p>081-233-334-808</p>
+            </div>
+            <div class="footer__nav col-lg-2">
+                <a href="">Our Service</a>
+                <a href="">Why Us</a>
+                <a href="">Testimonial</a>
+                <a href="">FAQ</a>
+            </div>
+            <div class="footer__sosmed col-lg-4">
+                <p>Connect with US</p>
+                <div class="group">
+                    <a href="" class="icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="" class="icon">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="" class="icon">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="" class="icon">
+                        <i class='bx bxl-gmail'></i>
+                    </a>
+                    <a href="" class="icon">
+                        <i class='bx bxl-twitch'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright col-lg-2">
+                <p>Copyright Binar 2022</p>
+                <div class="logo bg-primary"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<body>
+    <script src="/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
